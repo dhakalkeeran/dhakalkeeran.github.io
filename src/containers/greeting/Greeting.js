@@ -62,6 +62,12 @@ export default function Greeting() {
               ></img>
             )}
           </div>
+          <div className="greeting-profile-img">
+            <img className="greeting-profile-img-rounded"
+              src={require("../../assets/images/profilePic.png")}
+              alt="Profile picture"
+            ></img>
+          </div>
         </div>
       </div>
     </Fade>

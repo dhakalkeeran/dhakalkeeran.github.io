@@ -66,6 +66,20 @@
   transform-origin: 70% 70%;
 }
 
+.greeting-profile-img-rounded {
+  position: relative;
+  object-fit: cover;
+  left: 10rem;
+  right: 0;
+  top: 8rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20rem;
+  height: 20rem;
+  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  border-radius: 50%;
+}
+
 @keyframes wave {
   0% {
     transform: rotate(0deg);

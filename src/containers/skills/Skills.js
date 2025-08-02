@@ -60,6 +60,23 @@ export default function Skills() {
                 );
               })}
             </div>
+            <br></br>
+            <div>
+              <ul style={{ listStyleType: "none"}}>
+                {skillsSection.skillsTable.map((line, i) => {
+                  return (
+                    <li key={i}>
+                      <p>
+                        <span style={{ fontWeight: "bold" }}>
+                          {line.category}: &nbsp;
+                        </span>
+                        {line.allItems.join(", ")}
+                      </p>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
           </div>
         </Fade>
       </div>
