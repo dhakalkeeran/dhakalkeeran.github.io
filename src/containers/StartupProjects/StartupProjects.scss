@@ -58,6 +58,14 @@
   align-items: center;
 }
 
+.project-card:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.project-card:focus {
+  transform: scale(1.1); /* Slight zoom on keyboard focus */
+}
+
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));

@@ -44,6 +44,19 @@ export default function Skills() {
               {skillsSection.subTitle}
             </p>
             <SoftwareSkill />
+            <div style={{ listStyleType: "none"}}>
+              {skillsSection.skillsTable.map((line, i) => {
+                return (
+                  <p key={i}>
+                    <span style={{ fontWeight: "bold" }}>
+                      {line.category}: &nbsp;
+                    </span>
+                    {line.allItems.join(", ")}
+                  </p>
+                )
+              })}
+            </div>
+            <br/>
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (
@@ -59,23 +72,6 @@ export default function Skills() {
                   </p>
                 );
               })}
-            </div>
-            <br></br>
-            <div>
-              <ul style={{ listStyleType: "none"}}>
-                {skillsSection.skillsTable.map((line, i) => {
-                  return (
-                    <li key={i}>
-                      <p>
-                        <span style={{ fontWeight: "bold" }}>
-                          {line.category}: &nbsp;
-                        </span>
-                        {line.allItems.join(", ")}
-                      </p>
-                    </li>
-                  )
-                })}
-              </ul>
             </div>
           </div>
         </Fade>

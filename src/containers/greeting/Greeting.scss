@@ -26,8 +26,12 @@
 }
 
 .greeting-main > * {
-  flex: 1;
+  // flex: 1;
   margin-bottom: 30px;
+}
+
+.greeting-text-div {
+  flex: 2;
 }
 
 .empty-div {
@@ -49,8 +53,8 @@
 }
 
 .greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .greeting-image-div > img {
@@ -66,14 +70,16 @@
   transform-origin: 70% 70%;
 }
 
+.greeting-right-parent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .greeting-profile-img-rounded {
-  position: relative;
+  display: block;
   object-fit: cover;
-  left: 10rem;
-  right: 0;
-  top: 8rem;
-  margin-left: auto;
-  margin-right: auto;
   width: 20rem;
   height: 20rem;
   box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;

@@ -13,6 +13,13 @@ export default function StartupProject() {
     win.focus();
   }
 
+  const handleKeyDown = (event, url) => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        openUrlInNewTab(url);
+        event.preventDefault(); // Prevent default browser behavior (e.g., scrolling with Space)
+      }
+    };
+
   const {isDark} = useContext(StyleContext);
   if (!bigProjects.display) {
     return null;
@@ -37,11 +44,15 @@ export default function StartupProject() {
               return (
                 <div
                   key={i}
+                  role="button"
+                  tabIndex="0"
+                  onKeyDown={(e) => handleKeyDown(e, project.linkedUrl)}
                   className={
                     isDark
                       ? "dark-mode project-card project-card-dark"
                       : "project-card project-card-light"
                   }
+                  onClick={() => openUrlInNewTab(project.linkedUrl)}
                 >
                   {project.image ? (
                     <div className="project-image">

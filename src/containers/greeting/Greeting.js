@@ -27,15 +27,20 @@ export default function Greeting() {
                 {greeting.title}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
-              <p
-                className={
-                  isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
-                }
-              >
-                {greeting.subTitle}
-              </p>
+              {greeting.subTitle.map((item, i) => {
+                return (
+                  <p
+                    key={i}
+                    className={
+                      isDark
+                        ? "dark-mode greeting-text-p"
+                        : "greeting-text-p"
+                    }
+                  >
+                    {item}
+                  </p>
+                )
+              })}
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
@@ -52,21 +57,23 @@ export default function Greeting() {
               </div>
             </div>
           </div>
-          <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
+          <div className="greeting-right-parent">
+            <div className="greeting-profile-img">
+              <img className="greeting-profile-img-rounded"
+                src={require("../../assets/images/profilePic.png")}
+                alt="Profile picture"
               ></img>
-            )}
-          </div>
-          <div className="greeting-profile-img">
-            <img className="greeting-profile-img-rounded"
-              src={require("../../assets/images/profilePic.png")}
-              alt="Profile picture"
-            ></img>
+            </div>
+            <div className="greeting-image-div">
+              {illustration.animated ? (
+                <DisplayLottie animationData={landingPerson} />
+              ) : (
+                <img
+                  alt="man sitting on table"
+                  src={require("../../assets/images/manOnTable.svg")}
+                ></img>
+              )}
+            </div>
           </div>
         </div>
       </div>

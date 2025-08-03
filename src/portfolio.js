@@ -28,10 +28,18 @@ const illustration = {
 
 const greeting = {
   username: "Keeran Dhakal",
-  title: "Hi all, I'm Keeran",
-  subTitle: emoji(
-    "A passionate software engineer with professional experience building scalable applications, APIs, and microservices. Proficient in various programming languages, databases, and RESTful architecture, with additional exposure to containerization, cloud deployment, and CI/CD practices. "
-  ),
+  title: "Hi, I'm Keeran",
+  subTitle: [
+    "A passionate software engineer with professional experience in building scalable applications, APIs, and microservices. \
+    I am proficient in various programming languages, databases, and RESTful architecture, along with additional exposure to containerization, \
+    cloud deployment, and CI/CD practices.", 
+    "I recently graduated with a Master's degree in Computer Science from the University of Nebraska Omaha.\
+    During my graduate studies, I worked as a Graduate Research Assistant under the advisory of Dr. Yuliya Lierler and Dr. Jorge Fandinno Garcia. \
+    My research primarily focused on developing a CASP solver, EZSMTv3, and building a benchmarking platform for ASP solvers.", 
+    "Before joining my graduate studies, I worked as a software engineer for two years. I received my undergraduate degree in \
+    Electronics and Communication Engineering from the Institute of Engineering, Pulchowk Campus, Tribhuvan University.", 
+    "Right now, I am seeking full-time opportunities in software development, data science or artificial  intelligence."
+  ],
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -56,14 +64,10 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "Skills",
-  subTitle: "SOFTWARE DEVELOPER WITH ENTHUSIASM TO EXPLORE AND LEARN NEW TECH STACKS",
+  subTitle: "SOFTWARE DEVELOPER WITH EXPERIENCE IN THE FOLLOWING TECH STACKS",
   skills: [
     emoji(
-      "⚡ Build software using Python, Java, C++, C# and other related technologies"
-    ),
-    emoji("⚡ Create APIs and integrate into the product"),
-    emoji(
-      "⚡ Integration of databases, containerization and automated deployment with CI/CD"
+      "⚡ ENTHUSIASM TO EXPLORE AND ALWAYS OPEN TO LEARN NEW TECHNOLOGIES"
     )
   ],
 
@@ -132,19 +136,27 @@ https://fontawesome.com/icons?d=gallery */
   skillsTable: [
     {
       category: "Programming Languages",
-      allItems: ["Python", "Java", "C++", "SQL", "HTML", "CSS"]
+      allItems: ["Python", "Java", "C++", "JavaScript", "SQL", "HTML", "CSS"]
     },
     {
-      category: "Tools & Frameworks",
-      allItems: ["Flask", "Django", "Spring Boot", "Hibernate", "CMake", "Git"]
+      category: "Frameworks & Tools",
+      allItems: ["Flask", "Django", "Spring Boot", "Hibernate", "React", "CMake", "Git", "Linux"]
+    },
+    {
+      category: "Cloud & DevOps",
+      allItems: ["Docker", "CI/CD", "AWS", "GCP"]
     },
     {
       category: "Data Processing",
-      allItems: ["Pandas", "NumPy", "Matplolib", "Power BI"]
+      allItems: ["Pandas", "NumPy", "Scikit-learn", "Matplotlib", "TensorFlow", "Pytorch", "Power BI"]
     },
     {
-      category: "Programming Languages",
-      allItems: ["Python", "Java", "C++", "SQL", "HTML", "CSS"]
+      category: "Machine Learning/Deep Learning",
+      allItems: ["LLMs (GPT, BERT)", "Transformer Models", "GAN", "CNNs"]
+    },
+    {
+      category: "Soft Skills",
+      allItems: ["Problem Solving", "Teamwork", "Leadership", "Good Communication", "Time Management"]
     }
   ],
 
@@ -165,7 +177,7 @@ const educationInfo = {
       descBullets: [
         "GPA: 3.96",
         ["Computer Science Courseworks", "Design and Analysis of Algorithms, Software Specifications and Design, Advanced Operating Systems, Introduction to Cloud Computing, Advanced Concepts of Programming Language"],
-        ["Artificial Intelligence Courseworks", "Introduction to Aritificial Intelligence, Computer Vision and Pattern Recognition, Advanced Natural Language Understanding"],
+        ["Artificial Intelligence Courseworks", "Introduction to Aritificial Intelligence, Image Processing and Computer Vision, Advanced Natural Language Understanding"],
       ]
     },
     {
@@ -174,7 +186,7 @@ const educationInfo = {
       subHeader: "Bachelor of Electronics and Communication Engineering",
       duration: "September 2016 - April 2021",
       // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: [["Relevant Courseworks", "Computer Programming using C, Object Oriented Programming using C++, Computer Graphics, Artificial Intelligence, Data Mining, Big Data Technologies, Digital Signal Processing, Computer Networks, Microprocessors"]]
+      descBullets: [["Relevant Courseworks", "Computer Programming using C, Object Oriented Programming using C++, Computer Graphics, Artificial Intelligence, Data Mining, Big Data Technologies, Digital Signal Processing, Computer Networks, Microprocessor"]]
     }
   ]
 };
@@ -210,10 +222,13 @@ const workExperiences = {
       company: "University of Nebraska Omaha, NLPKR Lab",
       companylogo: require("./assets/images/unomaha.png"),
       date: "August 2023 – May 2025",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Designed and implemented a Constraint Answer Set Programming (CASP) solver system capable of handling 1000+ combinatorial optimization instances, improving solver scalability and expressiveness. ",
+        "Built a Dockerized benchmarking infrastructure that automated performance testing across 3+ solver systems, reducing evaluation time by 70%.",
+        "Developed 20+ modular components using C++, Python, and CMake, ensuring high performance, portability, and reproducibility of experiments.",
+        "Collaborated with 2 faculty advisors and 3+ peer researchers on system design and architecture, contributing to research publication submissions.",
+        "Maintained a clean, extensible codebase to support future solver extensions and simplify integration with logic-based toolchains."
       ]
     },
     {
@@ -221,14 +236,25 @@ const workExperiences = {
       company: "Docsumo",
       companylogo: require("./assets/images/docsumo.jpeg"),
       date: "August 2021 – July 2023",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "",
+      descBullets: [
+        "Designed and maintained 10+ high-performance microservices and RESTful APIs using Python and Flask, enabling efficient processing of 30,000+ financial documents across 20+ formats.",
+        "Deployed and managed scalable backend systems in production with Docker, Google Cloud Platform, and CI/CD pipelines, maintaining 99.9% service uptime.",
+        "Built internal data extraction frameworks using machine learning algorithms and LLMs that increased field-level accuracy to 95%+ and reduced document processing latency by 25%.",
+        "Developed and maintained unit and integration test suites with a focus on test-driven development, improving code reliability, and catching 90%+ of bugs pre-release.",
+        "Collaborated with cross-functional teams (Product, QA, ML) during bi-weekly Agile sprints, contributing to 20+ successful production deployments and driving feature delivery from ideation to release.",
+      ]
     },
     {
       role: "Software Engineer Intern",
       company: "Docsumo",
       companylogo: require("./assets/images/docsumo.jpeg"),
       date: "June 2021 – July 2021",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "",
+      descBullets: [
+        "Trained various machine learning models for information retrieval and extraction from financial documents.",
+        "Used LLMs and Spacy for Named Entity Recognition (NER)."
+      ]
     }
   ]
 };
@@ -245,119 +271,44 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "SOME RESEARCH AND PERSONAL PROJECTS THAT I WORKED ON",
+  subtitle: "SOME RESEARCH PROJECTS AND PERSONAL PROJECTS THAT I WORKED ON",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/ezsmt_interface.png"),
       projectName: "EZSMTv3",
-      projectDesc: "A Constraint ANswer Set Programming Solver",
+      projectDesc: "A Constraint Answer Set Programming Solver",
+      linkedUrl: "https://github.com/ylierler/ezsmtv3/",
       footerLink: [
         {
-          name: "Details",
+          name: "Learn More",
           url: "https://github.com/ylierler/ezsmtv3/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      image: require("./assets/images/reproducible_benchmarking_platform.jpg"),
       projectName: "Reproducible Benchmarking Platform using Docker",
       projectDesc: "Benchmarking Platform for ASP solvers using Docker containers",
+      linkedUrl: "https://github.com/jorgefandinno/eclingo-benchmark-docker",
       footerLink: [
         {
-          name: "Details",
+          name: "Learn More",
           url: "https://github.com/jorgefandinno/eclingo-benchmark-docker"
         }
       ]
     },
     {
       image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Reproducible Benchmarking Platform using Docker",
-      projectDesc: "Benchmarking Platform for ASP solvers using Docker containers",
+      projectName: "Analog Meter Reading using Computer Vision",
+      projectDesc: "Uses YOLOv7 to locate the needle in the analog meter and determines the reading",
       footerLink: [
         {
-          name: "Details",
+          name: "Learn More",
           url: "https://github.com/jorgefandinno/eclingo-benchmark-docker"
         }
       ]
     },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Reproducible Benchmarking Platform using Docker",
-      projectDesc: "Benchmarking Platform for ASP solvers using Docker containers",
-      footerLink: [
-        {
-          name: "Details",
-          url: "https://github.com/jorgefandinno/eclingo-benchmark-docker"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Reproducible Benchmarking Platform using Docker",
-      projectDesc: "Benchmarking Platform for ASP solvers using Docker containers",
-      footerLink: [
-        {
-          name: "Details",
-          url: "https://github.com/jorgefandinno/eclingo-benchmark-docker"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Reproducible Benchmarking Platform using Docker",
-      projectDesc: "Benchmarking Platform for ASP solvers using Docker containers",
-      footerLink: [
-        {
-          name: "Details",
-          url: "https://github.com/jorgefandinno/eclingo-benchmark-docker"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Reproducible Benchmarking Platform using Docker",
-      projectDesc: "Benchmarking Platform for ASP solvers using Docker containers",
-      footerLink: [
-        {
-          name: "Details",
-          url: "https://github.com/jorgefandinno/eclingo-benchmark-docker"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Reproducible Benchmarking Platform using Docker",
-      projectDesc: "Benchmarking Platform for ASP solvers using Docker containers",
-      footerLink: [
-        {
-          name: "Details",
-          url: "https://github.com/jorgefandinno/eclingo-benchmark-docker"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Reproducible Benchmarking Platform using Docker",
-      projectDesc: "Benchmarking Platform for ASP solvers using Docker containers",
-      footerLink: [
-        {
-          name: "Details",
-          url: "https://github.com/jorgefandinno/eclingo-benchmark-docker"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Reproducible Benchmarking Platform using Docker",
-      projectDesc: "Benchmarking Platform for ASP solvers using Docker containers",
-      footerLink: [
-        {
-          name: "Details",
-          url: "https://github.com/jorgefandinno/eclingo-benchmark-docker"
-        }
-      ]
-    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
