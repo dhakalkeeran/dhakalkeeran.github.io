@@ -129,45 +129,57 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     }
+    // {
+    //   skillName: "Machine Learning",
+    //   fontAwesomeClassname: "fas fa-hexagon-nodes"
+    // }
   ],
 
   skillsTable: [
     {
       category: "Programming Languages",
-      allItems: ["Python", "Java", "C++", "JavaScript", "SQL", "HTML", "CSS"]
+      allItems: ["Python", "Java", "C++", "C", "JavaScript", "SQL"]
     },
     {
-      category: "Frameworks & Tools",
-      allItems: [
-        "Flask",
-        "Django",
-        "Spring Boot",
-        "Hibernate",
-        "React",
-        "CMake",
-        "Git",
-        "Linux"
-      ]
+      category: "Backend",
+      allItems: ["Flask", "Django", "Spring Boot", "Hibernate", "Streamlit"]
+    },
+    {
+      category: "Frontend",
+      allItems: ["HTML", "CSS", "React", "Bootstrap"]
     },
     {
       category: "Cloud & DevOps",
       allItems: ["Docker", "CI/CD", "AWS", "GCP"]
     },
     {
-      category: "Data Processing",
+      category: "Machine Learning/Deep Learning",
       allItems: [
-        "Pandas",
-        "NumPy",
-        "Scikit-learn",
-        "Matplotlib",
-        "TensorFlow",
-        "Pytorch",
-        "Power BI"
+        "Natural Language Processing",
+        "Computer Vision",
+        "LLM",
+        "GAN",
+        "Neural Networks",
+        "Information Retrieval"
       ]
     },
     {
-      category: "Machine Learning/Deep Learning",
-      allItems: ["LLMs (GPT, BERT)", "Transformer Models", "GAN", "CNNs"]
+      category: "Frameworks & Tools",
+      allItems: [
+        "TensorFlow",
+        "Pytorch",
+        "OpenCV",
+        "SpaCy",
+        "NLTK",
+        "CMake",
+        "Git",
+        "Bash",
+        "Linux"
+      ]
+    },
+    {
+      category: "Data Processing",
+      allItems: ["Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Power BI"]
     },
     {
       category: "Soft Skills",
