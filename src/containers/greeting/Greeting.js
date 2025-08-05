@@ -32,14 +32,12 @@ export default function Greeting() {
                   <p
                     key={i}
                     className={
-                      isDark
-                        ? "dark-mode greeting-text-p"
-                        : "greeting-text-p"
+                      isDark ? "dark-mode greeting-text-p" : "greeting-text-p"
                     }
                   >
                     {item}
                   </p>
-                )
+                );
               })}
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
@@ -59,7 +57,8 @@ export default function Greeting() {
           </div>
           <div className="greeting-right-parent">
             <div className="greeting-profile-img">
-              <img className="greeting-profile-img-rounded"
+              <img
+                className="greeting-profile-img-rounded"
                 src={require("../../assets/images/profilePic.png")}
                 alt="Profile picture"
               ></img>

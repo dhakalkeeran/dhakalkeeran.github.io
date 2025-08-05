@@ -14,11 +14,11 @@ export default function StartupProject() {
   }
 
   const handleKeyDown = (event, url) => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        openUrlInNewTab(url);
-        event.preventDefault(); // Prevent default browser behavior (e.g., scrolling with Space)
-      }
-    };
+    if (event.key === "Enter" || event.key === " ") {
+      openUrlInNewTab(url);
+      event.preventDefault(); // Prevent default browser behavior (e.g., scrolling with Space)
+    }
+  };
 
   const {isDark} = useContext(StyleContext);
   if (!bigProjects.display) {
@@ -46,7 +46,7 @@ export default function StartupProject() {
                   key={i}
                   role="button"
                   tabIndex="0"
-                  onKeyDown={(e) => handleKeyDown(e, project.linkedUrl)}
+                  onKeyDown={e => handleKeyDown(e, project.linkedUrl)}
                   className={
                     isDark
                       ? "dark-mode project-card project-card-dark"

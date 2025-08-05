@@ -32,12 +32,12 @@ const greeting = {
   subTitle: [
     "A passionate software engineer with professional experience in building scalable applications, APIs, and microservices. \
     I am proficient in various programming languages, databases, and RESTful architecture, along with additional exposure to containerization, \
-    cloud deployment, and CI/CD practices.", 
+    cloud deployment, and CI/CD practices.",
     "I recently graduated with a Master's degree in Computer Science from the University of Nebraska Omaha.\
     During my graduate studies, I worked as a Graduate Research Assistant under the advisory of Dr. Yuliya Lierler and Dr. Jorge Fandinno Garcia. \
-    My research primarily focused on developing a CASP solver, EZSMTv3, and building a benchmarking platform for ASP solvers.", 
+    My research primarily focused on developing a CASP solver, EZSMTv3, and building a benchmarking platform for ASP solvers.",
     "Before joining my graduate studies, I worked as a software engineer for two years. I received my undergraduate degree in \
-    Electronics and Communication Engineering from the Institute of Engineering, Pulchowk Campus, Tribhuvan University.", 
+    Electronics and Communication Engineering from the Institute of Engineering, Pulchowk Campus, Tribhuvan University.",
     "Right now, I am seeking full-time opportunities in software development, data science or artificial  intelligence."
   ],
   resumeLink:
@@ -51,10 +51,10 @@ const socialMediaLinks = {
   github: "https://github.com/dhakalkeeran",
   linkedin: "https://www.linkedin.com/in/keerandhakal/",
   gmail: "keeran.dhakal@gmail.com",
-  // gitlab: "https://gitlab.com/saadpasta",
-  // facebook: "https://www.facebook.com/saad.pasta7",
-  // medium: "https://medium.com/@saadpasta",
-  // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  // gitlab: "https://gitlab.com/",
+  // facebook: "https://www.facebook.com/",
+  // medium: "https://medium.com/",
+  // stackoverflow: "https://stackoverflow.com/users/10422806/",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -66,9 +66,7 @@ const skillsSection = {
   title: "Skills",
   subTitle: "SOFTWARE DEVELOPER WITH EXPERIENCE IN THE FOLLOWING TECH STACKS",
   skills: [
-    emoji(
-      "⚡ ENTHUSIASM TO EXPLORE AND ALWAYS OPEN TO LEARN NEW TECHNOLOGIES"
-    )
+    emoji("⚡ ENTHUSIASM TO EXPLORE AND ALWAYS OPEN TO LEARN NEW TECHNOLOGIES")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -140,7 +138,16 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       category: "Frameworks & Tools",
-      allItems: ["Flask", "Django", "Spring Boot", "Hibernate", "React", "CMake", "Git", "Linux"]
+      allItems: [
+        "Flask",
+        "Django",
+        "Spring Boot",
+        "Hibernate",
+        "React",
+        "CMake",
+        "Git",
+        "Linux"
+      ]
     },
     {
       category: "Cloud & DevOps",
@@ -148,7 +155,15 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       category: "Data Processing",
-      allItems: ["Pandas", "NumPy", "Scikit-learn", "Matplotlib", "TensorFlow", "Pytorch", "Power BI"]
+      allItems: [
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "Matplotlib",
+        "TensorFlow",
+        "Pytorch",
+        "Power BI"
+      ]
     },
     {
       category: "Machine Learning/Deep Learning",
@@ -156,7 +171,13 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       category: "Soft Skills",
-      allItems: ["Problem Solving", "Teamwork", "Leadership", "Good Communication", "Time Management"]
+      allItems: [
+        "Problem Solving",
+        "Teamwork",
+        "Leadership",
+        "Good Communication",
+        "Time Management"
+      ]
     }
   ],
 
@@ -173,20 +194,41 @@ const educationInfo = {
       logo: require("./assets/images/unomaha.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "August 2023 - May 2025",
-      // desc: "Participated in the research of XXX and published 3 papers.",
+      desc: "",
       descBullets: [
         "GPA: 3.96",
-        ["Computer Science Courseworks", "Design and Analysis of Algorithms, Software Specifications and Design, Advanced Operating Systems, Introduction to Cloud Computing, Advanced Concepts of Programming Language"],
-        ["Artificial Intelligence Courseworks", "Introduction to Aritificial Intelligence, Image Processing and Computer Vision, Advanced Natural Language Understanding"],
+        [
+          "Computer Science Courseworks",
+          "Design and Analysis of Algorithms, Software Specifications and Design, Advanced Operating Systems, Introduction to Cloud Computing, Advanced Concepts of Programming Language"
+        ],
+        [
+          "Artificial Intelligence Courseworks",
+          "Introduction to Aritificial Intelligence, Image Processing and Computer Vision, Advanced Natural Language Understanding"
+        ]
       ]
     },
     {
-      schoolName: "Institute of Engineering, Pulchowk Campus, Tribhuvan University",
+      schoolName:
+        "Institute of Engineering, Pulchowk Campus, Tribhuvan University",
       logo: require("./assets/images/ioe.jpg"),
       subHeader: "Bachelor of Electronics and Communication Engineering",
       duration: "September 2016 - April 2021",
-      // desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: [["Relevant Courseworks", "Computer Programming using C, Object Oriented Programming using C++, Computer Graphics, Artificial Intelligence, Data Mining, Big Data Technologies, Digital Signal Processing, Computer Networks, Microprocessor"]]
+      desc: "",
+      descBullets: [
+        [
+          "Computer Science Courseworks",
+          "Computer Programming with C, Object Oriented Programming with C++, Computer Organization and Architecture, Embedded System, \
+          Discrete Structure, Computer Graphics, Computer Networks, Microprocessor, Digital Signal Processing, Project Management"
+        ],
+        [
+          "Artificial Intelligence Courseworks",
+          "Artificial Intelligence, Data Mining, Big Data Technologies"
+        ],
+        [
+          "Mathematics Courseworks",
+          "Probability and Statistics, Calculus I, Calculus II, Linear Algebra, Numerical Methods, Applied Mathematics"
+        ]
+      ]
     }
   ]
 };
@@ -198,15 +240,15 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "60%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "90%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -242,7 +284,7 @@ const workExperiences = {
         "Deployed and managed scalable backend systems in production with Docker, Google Cloud Platform, and CI/CD pipelines, maintaining 99.9% service uptime.",
         "Built internal data extraction frameworks using machine learning algorithms and LLMs that increased field-level accuracy to 95%+ and reduced document processing latency by 25%.",
         "Developed and maintained unit and integration test suites with a focus on test-driven development, improving code reliability, and catching 90%+ of bugs pre-release.",
-        "Collaborated with cross-functional teams (Product, QA, ML) during bi-weekly Agile sprints, contributing to 20+ successful production deployments and driving feature delivery from ideation to release.",
+        "Collaborated with cross-functional teams (Product, QA, ML) during bi-weekly Agile sprints, contributing to 20+ successful production deployments and driving feature delivery from ideation to release."
       ]
     },
     {
@@ -271,7 +313,8 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "SOME RESEARCH PROJECTS AND PERSONAL PROJECTS THAT I WORKED ON",
+  subtitle:
+    "SOME RESEARCH PROJECTS AND PERSONAL PROJECTS THAT I HAVE WORKED ON",
   projects: [
     {
       image: require("./assets/images/ezsmt_interface.png"),
@@ -289,7 +332,8 @@ const bigProjects = {
     {
       image: require("./assets/images/reproducible_benchmarking_platform.jpg"),
       projectName: "Reproducible Benchmarking Platform using Docker",
-      projectDesc: "Benchmarking Platform for ASP solvers using Docker containers",
+      projectDesc:
+        "Benchmarking Platform for ASP solvers using Docker containers",
       linkedUrl: "https://github.com/jorgefandinno/eclingo-benchmark-docker",
       footerLink: [
         {
@@ -299,16 +343,18 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      image: require("./assets/images/analogMeterReader.png"),
       projectName: "Analog Meter Reading using Computer Vision",
-      projectDesc: "Uses YOLOv7 to locate the needle in the analog meter and determines the reading",
+      projectDesc:
+        "Uses YOLOv7 to locate the meter in the image and image processing algorithms to detect the position of the needle",
+      linkedUrl: "https://github.com/dhakalkeeran/analog-meter-reader.git",
       footerLink: [
         {
           name: "Learn More",
-          url: "https://github.com/jorgefandinno/eclingo-benchmark-docker"
+          url: "https://github.com/dhakalkeeran/analog-meter-reader.git"
         }
       ]
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -317,56 +363,113 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Achievements 🏆 "),
+  subtitle: "Some of my achievements",
+  id: "achievements", // custom id to set for achievements div
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Outstanding Research Award",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
+        "Received outstanding research award for poster presentation at the University of Nebraska Omaha",
+      image: require("./assets/images/posterPresentation.png"),
+      imageAlt: "Poster",
+      footerLink: [
+        {
+          name: "Poster",
+          url: "https://drive.google.com/file/d/10ddECEnsMztYBFBnMQBkiy0W-_I-hP4a/view?usp=drive_link"
+        },
+        {
+          name: "Research Project",
+          url: "https://github.com/jorgefandinno/eclingo-benchmark-docker"
+        }
+      ]
+    },
+    {
+      title: "GRACA Grant",
+      subtitle:
+        "Selected for GRACA grant to work on research for the summer of 2024 at the University of Nebraska Omaha",
+      image: require("./assets/images/unomaha.png"),
+      imageAlt: "UNO logo",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: "https://www.unomaha.edu/office-of-research-and-creative-activity/for-students/graca.php"
+        }
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
+const certifcationSection = {
+  title: emoji("Certifications 📜"),
+  subtitle: "Listing some Certifications that I have completed",
+  id: "certifications", // custom id to set for certifications div
+
+  achievementsCards: [
+    {
+      title: "Deep Learning Specialization",
+      subtitle:
+        "Completed Deep Learning specialization from deeplearning.ai which includes courses such as Neural Networks and Deep Learning, Improving Deep Neural Networks, Structuring \
+        Machine Learning Projects, Convolution Neural Networks, and Sequence Models",
+      image: require("./assets/images/deepLearning.png"),
+      imageAlt: "DL specialization certificate",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://coursera.org/share/5a2c8b68c15922f45c513022451877d4"
+        }
+      ]
+    },
+    {
+      title: "Machine Learning",
+      subtitle:
+        "Completed Machine Learning  from the Stanford University offered on Coursera",
+      image: require("./assets/images/machineLearning.png"),
+      imageAlt: "Machine Learning certificate",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://coursera.org/share/712d010f815df59a141a990a48319383"
+        }
+      ]
+    },
+    {
+      title: "Front-End Web UI Frameworks and Tools: Bootstrap 4",
+      subtitle:
+        "Completed Bootstrap 4 course on Coursera from the Hong Kong University of Science and Technology",
+      image: require("./assets/images/bootstrap.png"),
+      imageAlt: "Machine Learning certificate",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://coursera.org/share/beb817bd116c891f654a56b45eb7012a"
+        }
+      ]
+    },
+    {
+      title: "JavaScript Essentials",
+      subtitle: "Completed JavaScript Essentials course on Udemy",
+      image: require("./assets/images/javascript.png"),
+      imageAlt: "Machine Learning certificate",
+      footerLink: [
+        {
+          name: "View Certificate",
+          url: "https://www.udemy.com/certificate/UC-A0GZMFEZ/"
+        }
+      ]
+    },
+    {
+      title: "Introduction to Web Development",
+      subtitle:
+        "Completed introductory web development course on Coursera from UCDavis",
+      image: require("./assets/images/webDevelopment.png"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "View Certificate",
+          url: "https://coursera.org/share/b695b331f803e83f23156865792732b0"
         }
       ]
     }
@@ -383,16 +486,14 @@ const blogSection = {
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+      url: "",
+      title: "",
+      description: ""
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+      url: "",
+      title: "",
+      description: ""
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -408,10 +509,10 @@ const talkSection = {
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      title: "",
+      subtitle: "",
+      slides_url: "",
+      event_url: ""
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -424,9 +525,7 @@ const podcastSection = {
   subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
+  podcast: [""],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -441,9 +540,8 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Details ☎️"),
-  subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  // number: "+92-0000000000",
+  subtitle: "Want to discuss a project or just say hi?",
+  // number: "+1-XXX-XXX-XXXX",
   email_address: "keeran.dhakal@gmail.com"
 };
 
@@ -468,6 +566,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
+  certifcationSection,
   blogSection,
   talkSection,
   podcastSection,

@@ -44,19 +44,19 @@ export default function Skills() {
               {skillsSection.subTitle}
             </p>
             <SoftwareSkill />
-            <div style={{ listStyleType: "none"}}>
+            <div style={{listStyleType: "none"}}>
               {skillsSection.skillsTable.map((line, i) => {
                 return (
                   <p key={i}>
-                    <span style={{ fontWeight: "bold" }}>
+                    <span style={{fontWeight: "bold"}}>
                       {line.category}: &nbsp;
                     </span>
                     {line.allItems.join(", ")}
                   </p>
-                )
+                );
               })}
             </div>
-            <br/>
+            <br />
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (

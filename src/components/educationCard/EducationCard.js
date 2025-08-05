@@ -8,24 +8,23 @@ export default function EducationCard({school}) {
 
   const GetDescBullets = ({descBullets}) => {
     return descBullets
-      ? descBullets.map((item, i) => 
-      {
-        if (Array.isArray(item) && item.length>1) {
-          return (
-            <li key={i}>
-              {item[0]}
-              <p className="education-text-bullets-para">{item[1]}</p>
-            </li>
-          );
-        } else {
-          return (
-            <li key={i}>
-              {item}
-              <div style={{ height: "1rem" }}></div>  
-            </li>
-          )
-        }
-      })
+      ? descBullets.map((item, i) => {
+          if (Array.isArray(item) && item.length > 1) {
+            return (
+              <li key={i}>
+                {item[0]}
+                <p className="education-text-bullets-para">{item[1]}</p>
+              </li>
+            );
+          } else {
+            return (
+              <li key={i}>
+                {item}
+                <div style={{height: "1rem"}}></div>
+              </li>
+            );
+          }
+        })
       : null;
   };
   const {isDark} = useContext(StyleContext);
