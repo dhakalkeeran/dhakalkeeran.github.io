@@ -5,7 +5,6 @@
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 import cplusplusLogo from "./assets/images/cplusplus.svg";
-import csharpLogo from "./assets/images/csharp.svg";
 import flaskLogo from "./assets/images/flask.svg";
 import djangoLogo from "./assets/images/django.svg";
 import gcpLogo from "./assets/images/gcp.svg";
@@ -30,12 +29,13 @@ const greeting = {
   username: "Keeran Dhakal",
   title: "Hi, I'm Keeran",
   subTitle: [
-    "A passionate software engineer with professional experience in building scalable applications, APIs, and microservices. \
-    I am proficient in various programming languages, databases, and RESTful architecture, along with additional exposure to containerization, \
-    cloud deployment, and CI/CD practices.",
+    "A passionate software engineer with over 2 years of professional experience in building scalable applications, APIs, and microservices. \
+    I am proficient in various programming languages, databases, and RESTful architecture, with hands-on experience in containerization, \
+    cloud deployments, and CI/CD pipelines.",
     "I recently graduated with a Master's degree in Computer Science from the University of Nebraska Omaha.\
-    During my graduate studies, I worked as a Graduate Research Assistant under the advisory of Dr. Yuliya Lierler and Dr. Jorge Fandinno Garcia. \
-    My research primarily focused on developing a CASP solver, EZSMTv3, and building a benchmarking platform for ASP solvers.",
+    During my graduate studies, I worked as a Graduate Research Assistant under the advisory of Professor Dr. Yuliya Lierler and Assistant Professor \
+    Dr. Jorge Fandinno Garcia. My research primarily focused on developing a constraint answer set programming solver, EZSMTv3, and building a \
+    benchmarking platform for ASP solvers.",
     "Before joining my graduate studies, I worked as a software engineer for two years. I received my undergraduate degree in \
     Electronics and Communication Engineering from the Institute of Engineering, Pulchowk Campus, Tribhuvan University.",
     "Right now, I am seeking full-time opportunities in software development, data science or artificial  intelligence."
@@ -54,7 +54,7 @@ const socialMediaLinks = {
   // gitlab: "https://gitlab.com/",
   // facebook: "https://www.facebook.com/",
   // medium: "https://medium.com/",
-  // stackoverflow: "https://stackoverflow.com/users/10422806/",
+  // stackoverflow: "https://stackoverflow.com/",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -78,12 +78,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "Java",
-      fontAwesomeClassname: "fab fa-java"
-    },
-    {
       skillName: "C++",
       svgLogo: cplusplusLogo
+    },
+    {
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
     },
     // {
     //   skillName: "C#",
@@ -138,7 +138,7 @@ https://fontawesome.com/icons?d=gallery */
   skillsTable: [
     {
       category: "Programming Languages",
-      allItems: ["Python", "Java", "C++", "C", "JavaScript", "SQL"]
+      allItems: ["Python", "C++", "C", "Java", "JavaScript", "SQL"]
     },
     {
       category: "Backend",
@@ -278,10 +278,10 @@ const workExperiences = {
       date: "August 2023 – May 2025",
       desc: "",
       descBullets: [
-        "Designed and implemented a Constraint Answer Set Programming (CASP) solver system capable of handling 1000+ combinatorial optimization instances, improving solver scalability and expressiveness. ",
-        "Built a Dockerized benchmarking infrastructure that automated performance testing across 3+ solver systems, reducing evaluation time by 70%.",
-        "Developed 20+ modular components using C++, Python, and CMake, ensuring high performance, portability, and reproducibility of experiments.",
-        "Collaborated with 2 faculty advisors and 3+ peer researchers on system design and architecture, contributing to research publication submissions.",
+        "Designed and implemented a Constraint Answer Set Programming (CASP) solver system capable of evaluating 1000+ combinatorial optimization combinations per instance, effectively selecting optimal solutions and improving solver scalability and expressiveness.",
+        "Developed a Dockerized benchmarking infrastructure that automated performance testing across 3+ solver systems, reducing evaluation time by 70%.",
+        "Benchmarked and documented the performance of the new solvers in terms of time and memory and compared it with other similar solvers within various benchmarking environments.",
+        "Collaborated with 2 faculty advisors and other peer researchers on solver system design and architecture, contributing to research publication submissions.",
         "Maintained a clean, extensible codebase to support future solver extensions and simplify integration with logic-based toolchains."
       ]
     },
@@ -292,11 +292,11 @@ const workExperiences = {
       date: "August 2021 – July 2023",
       desc: "",
       descBullets: [
-        "Designed and maintained 10+ high-performance microservices and RESTful APIs using Python and Flask, enabling efficient processing of 30,000+ financial documents across 20+ formats.",
-        "Deployed and managed scalable backend systems in production with Docker, Google Cloud Platform, and CI/CD pipelines, maintaining 99.9% service uptime.",
-        "Built internal data extraction frameworks using machine learning algorithms and LLMs that increased field-level accuracy to 95%+ and reduced document processing latency by 25%.",
-        "Developed and maintained unit and integration test suites with a focus on test-driven development, improving code reliability, and catching 90%+ of bugs pre-release.",
-        "Collaborated with cross-functional teams (Product, QA, ML) during bi-weekly Agile sprints, contributing to 20+ successful production deployments and driving feature delivery from ideation to release."
+        "Designed and maintained high-performance microservices and RESTful APIs, enabling efficient processing of 30,000+ financial documents across 20+ formats such as invoices and bank statements.",
+        "Led a project to develop an extraction framework for information retrieval involving scanned and Excel documents, identifying key value pairs as well as table headers and rows, and reducing manual extraction time by more than 80%.",
+        "Implemented AI-assisted data extraction pipelines leveraging machine learning and large language models (LLMs), achieving over 95% field-level accuracy.",
+        "Deployed and managed scalable backend systems in production with Docker, Google Cloud Platform, and CI/CD pipelines, ensuring reliable and efficient service delivery.",
+        "Developed and maintained comprehensive unit and integration test suites emphasizing test-driven development, significantly enhancing code reliability and early bug detection."
       ]
     },
     {
@@ -306,8 +306,8 @@ const workExperiences = {
       date: "June 2021 – July 2021",
       desc: "",
       descBullets: [
-        "Trained various machine learning models for information retrieval and extraction from financial documents.",
-        "Used LLMs and Spacy for Named Entity Recognition (NER)."
+        "Trained various ML models for information retrieval and extraction from financial documents.",
+        "Used LLMs and spaCy for Named Entity Recognition (NER) in key value pair extractions."
       ]
     }
   ]
@@ -325,8 +325,7 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle:
-    "SOME RESEARCH PROJECTS AND PERSONAL PROJECTS THAT I HAVE WORKED ON",
+  subtitle: "FEW RESEARCH AND PERSONAL PROJECTS, MORE ON GITHUB",
   projects: [
     {
       image: require("./assets/images/ezsmt_interface.png"),
@@ -376,7 +375,7 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Achievements 🏆 "),
-  subtitle: "Some of my achievements",
+  subtitle: "Recent achievements",
   id: "achievements", // custom id to set for achievements div
 
   achievementsCards: [
@@ -416,7 +415,7 @@ const achievementSection = {
 
 const certifcationSection = {
   title: emoji("Certifications 📜"),
-  subtitle: "Listing some Certifications that I have completed",
+  subtitle: "Completed Online Certifications",
   id: "certifications", // custom id to set for certifications div
 
   achievementsCards: [
@@ -552,7 +551,8 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Details ☎️"),
-  subtitle: "Want to discuss a project or just say hi?",
+  subtitle:
+    "Want to discuss a project or just say hi? My inbox is open to all.",
   // number: "+1-XXX-XXX-XXXX",
   email_address: "keeran.dhakal@gmail.com"
 };
@@ -565,6 +565,7 @@ const twitterDetails = {
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isOpenToRelocation = true; // set false if you are not open to relocation
 
 export {
   illustration,
@@ -585,5 +586,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
+  isOpenToRelocation,
   resumeSection
 };
