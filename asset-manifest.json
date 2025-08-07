@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.9ec6392e.css",
-    "main.js": "/static/js/main.4e2f734f.js",
+    "main.js": "/static/js/main.78b84599.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.8ca44480.chunk.js": "/static/js/64.8ca44480.chunk.js",
     "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
-    "static/js/769.407c0c84.chunk.js": "/static/js/769.407c0c84.chunk.js",
+    "static/js/769.b98047f9.chunk.js": "/static/js/769.b98047f9.chunk.js",
     "static/media/javascript.png": "/static/media/javascript.945055a52f1cc5e53f25.png",
     "static/media/deepLearning.png": "/static/media/deepLearning.7a3a47dfb1bc83165af2.png",
     "static/media/posterPresentation.png": "/static/media/posterPresentation.4003faddcad196a358db.png",
@@ -17,7 +17,7 @@
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/reproducible_benchmarking_platform.jpg": "/static/media/reproducible_benchmarking_platform.a2d3b743971be349ba83.jpg",
     "static/media/profilePic.png": "/static/media/profilePic.0695585988801f0da32d.png",
-    "static/media/resume.pdf": "/static/media/resume.63d6df9606699c3be002.pdf",
+    "static/media/Keeran_Dhakal_Resume.pdf": "/static/media/Keeran_Dhakal_Resume.b6a40f7cbf87efe76eaa.pdf",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/ioe.jpg": "/static/media/ioe.c533d091481ea4d298dc.jpg",
     "static/media/unomaha.png": "/static/media/unomaha.a653f4c8e13b53f5aa80.png",
@@ -30,20 +30,19 @@
     "index.html": "/index.html",
     "static/media/cplusplus.svg": "/static/media/cplusplus.3354feeb89f99844a0e80cc21c7b7030.svg",
     "static/media/springboot.svg": "/static/media/springboot.5d2df8438f124a52ecb490b5d7a08b9d.svg",
-    "static/media/csharp.svg": "/static/media/csharp.19f2027ae8caee400dd67b5ca86270de.svg",
     "static/media/django.svg": "/static/media/django.0db0e3a8df010dd3c964c5986d82894c.svg",
     "static/media/gcp.svg": "/static/media/gcp.2f4f1a90fa6f1df02fc4a403dc0b426f.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
     "static/media/hibernate.svg": "/static/media/hibernate.b75522c260fa8967dae65f4c35e3b306.svg",
     "main.9ec6392e.css.map": "/static/css/main.9ec6392e.css.map",
-    "main.4e2f734f.js.map": "/static/js/main.4e2f734f.js.map",
+    "main.78b84599.js.map": "/static/js/main.78b84599.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
     "64.8ca44480.chunk.js.map": "/static/js/64.8ca44480.chunk.js.map",
     "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
-    "769.407c0c84.chunk.js.map": "/static/js/769.407c0c84.chunk.js.map"
+    "769.b98047f9.chunk.js.map": "/static/js/769.b98047f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9ec6392e.css",
-    "static/js/main.4e2f734f.js"
+    "static/js/main.78b84599.js"
   ]
 }
