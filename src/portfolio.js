@@ -142,7 +142,14 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       category: "Backend",
-      allItems: ["Flask", "Django", "Spring Boot", "Hibernate", "Streamlit"]
+      allItems: [
+        "Flask",
+        "Django",
+        "Spring Boot",
+        "Hibernate",
+        "MySQL",
+        "Streamlit"
+      ]
     },
     {
       category: "Frontend",
@@ -380,9 +387,9 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Outstanding Research Award",
+      title: "Excellence in Research Award",
       subtitle:
-        "Received outstanding research award for poster presentation at the University of Nebraska Omaha",
+        "Received Excellence in Research Award for poster presentation at CS Research Fair, University of Nebraska Omaha",
       image: require("./assets/images/posterPresentation.png"),
       imageAlt: "Poster",
       footerLink: [
